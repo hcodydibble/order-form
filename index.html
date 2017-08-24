@@ -5,12 +5,13 @@
     <title>Order Stuff!</title>
   </head>
   <body>
+  <form id='dasForm'>
     <table id=product>
       <tr>
         <td><label for="products">Products:</label></td>
-        <td><select class="products" name="">
+        <td><select class="" name="products">
               <option value="select-one" selected disabled>---Select One---</option>
-              <option value="bag">R2-D2 Bag</option>
+              <option value="img/bag.jpg">R2-D2 Bag</option>
               <option value="banana">Banana Slicer</option>
               <option value="bathroom">Tablet/Toilet Paper Holder</option>
               <option value="boots">Toe-less Boots</option>
@@ -37,6 +38,7 @@
         <td><label for="quantity">Quantity:</label></td>
         <td><input type="number" name="quantity" value=""></td>
       </tr>
+    </form>
       <tr>
         <td><label for="name">Name:</label></td>
         <td><input type="text" name="name" value=""></td>
@@ -120,4 +122,5 @@
       </tr>
     </table>
   </body>
+  <script src="app.js" charset="utf-8"></script>
 </html>
