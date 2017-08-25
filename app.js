@@ -9,7 +9,6 @@ function Order(name,quantity){
 
 function placeOrder(event){
   event.preventDefault();
-  console.log('foo');
   var newOrder = new Order();
   newOrder.name = this.elements['products'].value;
   newOrder.quantity = parseInt(this.elements['quantity'].value);
