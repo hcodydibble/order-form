@@ -14,7 +14,7 @@ img{
   transition-property: border-radius, background-color;
   transition-duration: 0s;
 }
-img:hover{
+.css_dis:hover{
   border-style: solid;
   border-color: rgb(159, 104, 32);
   border-width: 2px;
@@ -42,4 +42,9 @@ p{
 }
 section{
   text-align: center;
+}
+div{
+  float: left;
+  border-style: solid;
+  border-width: 2;
 }
