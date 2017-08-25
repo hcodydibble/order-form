@@ -13,6 +13,9 @@ function placeOrder(event){
   var newOrder = new Order();
   newOrder.name = this.elements['products'].value;
   newOrder.quantity = parseInt(this.elements['quantity'].value);
+  if(localStorage.getItem('newOrders')){
+    orders = JSON.parse(localStorage.getItem('newOrders'));
+  }
   orders.push(newOrder);
   localStorage.newOrders = JSON.stringify(orders);
   dasForm.reset();

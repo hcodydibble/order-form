@@ -29,7 +29,6 @@ function renderCartPics () {
     box.appendChild(qty);
     box.appendChild(trashCan);
     position1.appendChild(box);
-    box.id = picArray[itemCounter];
     trashCan.addEventListener('click',removeItem);
   }
 }
@@ -38,7 +37,6 @@ renderCartPics();
 
 function removeItem(event){
   var index = picArray.indexOf(event.target.id);
-  console.log('foo');
   dataArray.splice(index,1);
   localStorage.newOrders = JSON.stringify(dataArray);
   location.reload();
