@@ -29,7 +29,6 @@ function renderCartPics () {
     box.appendChild(qty);
     box.appendChild(trashCan);
     position1.appendChild(box);
-    box.id = picArray[itemCounter];
     trashCan.addEventListener('click',removeItem);
   }
 }
