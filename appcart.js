@@ -21,7 +21,7 @@ function renderCartPics () {
     var qty = document.createElement('p');
     var trashCan = document.createElement('img');
     itemPic.setAttribute('src', picArray[itemCounter]);
-    itemPic.id = picArray[itemCounter];
+    trashCan.id = picArray[itemCounter];
     trashCan.src = 'img/trashCan.png';
     box.appendChild(itemPic);
     qty.innerText = 'Qty: ' + qtyArray[itemCounter];
@@ -29,7 +29,7 @@ function renderCartPics () {
     box.appendChild(trashCan);
     position1.appendChild(box);
     box.id = picArray[itemCounter];
-    itemPic.addEventListener('click',removeItem);
+    trashCan.addEventListener('click',removeItem);
   }
 }
 
