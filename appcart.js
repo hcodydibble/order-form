@@ -22,6 +22,7 @@ function renderCartPics () {
     var trashCan = document.createElement('img');
     itemPic.setAttribute('src', picArray[itemCounter]);
     trashCan.id = picArray[itemCounter];
+    trashCan.className = 'css_dis';
     trashCan.src = 'img/trashCan.png';
     box.appendChild(itemPic);
     qty.innerText = 'Qty: ' + qtyArray[itemCounter];
