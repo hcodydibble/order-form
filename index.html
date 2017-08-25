@@ -13,7 +13,7 @@
     <table id=product>
       <tr>
         <td><label for="products">Products:</label></td>
-        <td><select class="" name="products">
+        <td><select class="" name="products"  required>
               <option value="select-one" selected disabled>---Select One---</option>
               <option value='img/bag.jpg'>R2-D2 Bag</option>
               <option value='img/banana.jpg'>Banana Slicer</option>
@@ -40,88 +40,88 @@
       </tr>
       <tr>
         <td><label for="quantity">Quantity:</label></td>
-        <td><input type="number" name="quantity" value=""></td>
+        <td><input type="number" name="quantity" value="" required></td>
       </tr>
       <tr>
         <td><label for="name">Name:</label></td>
-        <td><input type="text" name="name" value=""></td>
+        <td><input type="text" name="name" value="" required></td>
       </tr>
       <tr>
         <td><label for="address">Address</label></td>
-        <td><input type="text" name="address" value="" placeholder="Street"></td>
+        <td><input type="text" name="address" value="" placeholder="Street" required></td>
       </tr>
       <tr>
         <td></td>
-        <td><input type="text" name="address" value="" placeholder="City"></td>
+        <td><input type="text" name="address" value="" placeholder="City" required></td>
       </tr>
       <tr>
         <td><label for="state">State:</label></td>
         <td>
-          <select class="" name="state">
-          <option value="">AL</option>
-          <option value="">AK</option>
-          <option value="">AZ</option>
-          <option value="">AR</option>
-          <option value="">CA</option>
-          <option value="">CO</option>
-          <option value="">CT</option>
-          <option value="">DE</option>
-          <option value="">FL</option>
-          <option value="">GA</option>
-          <option value="">HI</option>
-          <option value="">ID</option>
-          <option value="">IL</option>
-          <option value="">IN</option>
-          <option value="">IA</option>
-          <option value="">KS</option>
-          <option value="">KY</option>
-          <option value="">LA</option>
-          <option value="">ME</option>
-          <option value="">MD</option>
-          <option value="">MA</option>
-          <option value="">MI</option>
-          <option value="">MN</option>
-          <option value="">MS</option>
-          <option value="">MO</option>
-          <option value="">MT</option>
-          <option value="">NE</option>
-          <option value="">NV</option>
-          <option value="">NH</option>
-          <option value="">NJ</option>
-          <option value="">NM</option>
-          <option value="">NY</option>
-          <option value="">NC</option>
-          <option value="">ND</option>
-          <option value="">OH</option>
-          <option value="">OK</option>
-          <option value="">OR</option>
-          <option value="">PA</option>
-          <option value="">RI</option>
-          <option value="">SC</option>
-          <option value="">SD</option>
-          <option value="">TN</option>
-          <option value="">TX</option>
-          <option value="">UT</option>
-          <option value="">VT</option>
-          <option value="">VA</option>
-          <option value="">WA</option>
-          <option value="">WV</option>
-          <option value="">WI</option>
-          <option value="">WY</option>
+          <select class="" name="state" required>
+            <option value="">AL</option>
+            <option value="">AK</option>
+            <option value="">AZ</option>
+            <option value="">AR</option>
+            <option value="">CA</option>
+            <option value="">CO</option>
+            <option value="">CT</option>
+            <option value="">DE</option>
+            <option value="">FL</option>
+            <option value="">GA</option>
+            <option value="">HI</option>
+            <option value="">ID</option>
+            <option value="">IL</option>
+            <option value="">IN</option>
+            <option value="">IA</option>
+            <option value="">KS</option>
+            <option value="">KY</option>
+            <option value="">LA</option>
+            <option value="">ME</option>
+            <option value="">MD</option>
+            <option value="">MA</option>
+            <option value="">MI</option>
+            <option value="">MN</option>
+            <option value="">MS</option>
+            <option value="">MO</option>
+            <option value="">MT</option>
+            <option value="">NE</option>
+            <option value="">NV</option>
+            <option value="">NH</option>
+            <option value="">NJ</option>
+            <option value="">NM</option>
+            <option value="">NY</option>
+            <option value="">NC</option>
+            <option value="">ND</option>
+            <option value="">OH</option>
+            <option value="">OK</option>
+            <option value="">OR</option>
+            <option value="">PA</option>
+            <option value="">RI</option>
+            <option value="">SC</option>
+            <option value="">SD</option>
+            <option value="">TN</option>
+            <option value="">TX</option>
+            <option value="">UT</option>
+            <option value="">VT</option>
+            <option value="">VA</option>
+            <option value="">WA</option>
+            <option value="">WV</option>
+            <option value="">WI</option>
+            <option value="">WY</option>
           </select>
         </td>
       </tr>
       <tr>
         <td><label for="zip">Zip Code</label></td>
-        <td><input type="number" name="zip" value=""></td>
+        <td><input type="number" name="zip" value="" required></td>
     </table>
     <table id='ccInfo'>
       <tr>
         <td><label for="creditcard">Credit Card Number:</label></td>
-        <td><input class="" type="number" min="1000" max="9999" name="creditcard" /></td>
-        <td><input class="" type="number" min="1000" max="9999" name="creditcard" /></td>
-        <td><input class="" type="number" min="1000" max="9999" name="creditcard" /></td>
-        <td><input class="" type="number" min="1000" max="9999" name="creditcard" /></td>
+        <td><input class="" type="number" min="1000" max="9999" name="creditcard" required/></td>
+        <td><input class="" type="number" min="1000" max="9999" name="creditcard" required/></td>
+        <td><input class="" type="number" min="1000" max="9999" name="creditcard" required/></td>
+        <td><input class="" type="number" min="1000" max="9999" name="creditcard" required/></td>
       </tr>
       <tr>
         <td><input type="submit" name="" value="Add to Cart">
