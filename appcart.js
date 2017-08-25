@@ -1,9 +1,18 @@
 'use strict';
 var position1 = document.getElementById('col1');
+var picArray = [];
+var qtyArray = [];
+var dataArray = [];
 
-var dataArray = ['img/bag.jpg', 12, 'img/breakfast.jpg', 1, 'img/pen.jpg', 5, 'img/tauntaun.jpg', 7];
-var picArray = ['img/bag.jpg', 'img/breakfast.jpg', 'img/pen.jpg', 'img/tauntaun.jpg',];
-var qtyArray = [12, 1, 5, 7];
+if (localStorage.getItem('newOrders')) {
+  dataArray = JSON.parse(localStorage.getItem('newOrders'));
+} else {
+  var dataArray = [];
+}
+for (var dataCounter = 0; dataCounter < dataArray.length; dataCounter++){
+  picArray.push(dataArray[dataCounter].name);
+  qtyArray.push(dataArray[dataCounter].quantity);
+}
 
 function renderCartPics () {
   for (var itemCounter = 0; itemCounter < picArray.length; itemCounter ++){
@@ -12,14 +21,24 @@ function renderCartPics () {
     var qty = document.createElement('p');
     var trashCan = document.createElement('img');
     itemPic.setAttribute('src', picArray[itemCounter]);
-    trashCan.setAttribute('src', 'img/trashCan.png');
+    itemPic.id = picArray[itemCounter];
+    trashCan.src = 'img/trashCan.png';
     box.appendChild(itemPic);
     qty.innerText = 'Qty: ' + qtyArray[itemCounter];
     box.appendChild(qty);
     box.appendChild(trashCan);
     position1.appendChild(box);
     box.id = picArray[itemCounter];
+    itemPic.addEventListener('click',removeItem);
   }
 }
 
 renderCartPics();
+
+function removeItem(event){
+  var index = picArray.indexOf(event.target.id);
+  console.log('foo');
+  dataArray.splice(index,1);
+  localStorage.newOrders = JSON.stringify(dataArray);
+  location.reload();
+}
